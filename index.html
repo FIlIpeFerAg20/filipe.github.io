@@ -21,59 +21,100 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item menu-item">
-                <a class="nav-link text-info" aria-current="page" href="#relevant-topics">Informações</a>
+                <a class="nav-link text-info" aria-current="page" href="#Perfil">Início</a>
               </li>
 
               <li class="nav-item menu-item">
-                <a class="nav-link text-info" aria-current="page" href="#phishing">Repositórios</a>
+                <a class="nav-link text-info" aria-current="page" href="#relevant-topics">Repositório Info</a>
               </li>
 
               <li class="nav-item menu-item">
-                <a class="nav-link text-info" aria-current="page" href="#hackers">Seguidores</a>
+                <a class="nav-link text-info" aria-current="page" href="https://github.com/FIlIpeFerAg20/filipe.github.io" target="_blank">Repositório Site</a>
+              </li>
+
+              <li class="nav-item menu-item">
+                <a class="nav-link text-info" aria-current="page" href="https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7946100-crimes-ciberneticos-02.git" target="_blank">Repositório Lockey</a>
               </li>
               
             </ul>
           </div>
         </div>
       </nav>
+	  
+	
+  <div class="form-group d-flex flex-column align-items-center justify-content-center mt-3">
+    <div class="d-flex flex-row">
+      <div class="input-group-md mb-3">
+        <input class="form-control border border-secondary" id="keyword" type="text" placeholder="Palavra chave..."/>
+      </div>
+      
+      <button class="btn btn-info text-white mb-3 ms-3 text-sm" id="search">
+        Buscar
+      </button>
+    </div>
 
-
-      <div class="form-group d-flex flex-column align-items-center justify-content-center mt-3">
-        <div class="d-flex flex-row">
-          <div class="input-group-md mb-3">
-            <input class="form-control border border-secondary" id="keyword" type="text" placeholder="Palavra chave..."/>
+    <div class="container">
+      <div class="how-section1">
+        <div class="row">
+          <div class="col-md-6 how-img">
+            <img src="https://avatars.githubusercontent.com/u/91295716?v=4" style="max-width: 70% !important;"
+              class="img-fluid" alt="" />
           </div>
-          
-          <button class="btn btn-info text-white mb-3 ms-3 text-sm" id="search">
-            Buscar
-          </button>
-        </div>
-        <div class="container">
-            <div class="how-section1">
-                <div class="row">
-                    <div class="col-md-6 how-img">
-                        <img src="https://avatars.githubusercontent.com/u/91295716?v=4" style="max-width: 70% !important;" class="img-fluid" alt="" />
-                    </div>
-                    <div class="col-md-6" style="margin-top: 5% !important;">
-                        <h4>Filipe Fernandes</h4>
-                        <h4 class="subheading">Um garoto de 19 anos, e com sonhos a realizar! </h4>
-                        <p class="text-muted">Além de ser apaixonado por Programação, é também um amante de Astronomia e esporte. Sempre em busca de novas
-                            oportunidades para aprender algo novo a cada dia, estudou Inglês por 3 anos para se tornar fluente e assim com sua experiência
-                            em Programação, um dia poder conseguir ganhar conhecimento no exterior. Fez também um Bootcamp cujo aprendizado foi "Programador de 
-                            sofware iniciante" no IGTI (Instituto de Gestão e Tecnologia da Informação).
-                            
-                        </p>
+          <div class="col-md-6" style="margin-top: 5% !important;" text-align="center">
+            <h4></h4>
+            <div class="card">
+              <h5 class="card-header">Filipe Fernandes de Aguiar</h5>
+              <div class="card-body">
+                <h5 class="card-title">Informações - GitHub</h5>  
+                <p class="card-text">Empresa: Per'fa Alimentos</p>
+                <p class="card-text">Números de Repositórios: 2</p>
+                <p class="card-text">Organizações: ICEI-PUC-Minas-PPLES-TI</p>
+                <p class="card-text">Contagem, MG</p>
+                <p class="card-text">Seguidores 0 | Seguindo 0</p>
+                <a href="https://github.com/FIlIpeFerAg20" target="_blank" class="btn btn-primary">Visitar Página do GitHub</a>
+                
+              </div>
+            </div>
+
     
-                    </div>
-                </div>
+
+    <div id="filteredList">
+    </div>
+  </div>
+	
+
+    <div class="relevant-topics pt-5 pb-5" id="relevant-topics">
+        <div class="container">
+         
+            <div class="row pt-5" id="relevant-row">
+               
             </div>
         </div>
-
-        <div class="d-flex flex-row justify-content-center align-items-center p-5">
-            <strong class="text-secondary">Desenvolvimento de Interfaces WEB © 2021</strong>
-        </div>
+    </div>
     
+    <div class="modal" id="myModal" tabindex="-1">
+        <div class="modal-lg modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="relevant-title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="relevant-body">
+              <p>Modal body text goes here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="d-flex flex-row justify-content-center align-items-center p-5">
+      <strong class="text-secondary">Desenvolvimento de Interfaces WEB © 2021</strong>
+  </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./js/homepage.js"></script>
+
+
 </body>
 </html>
